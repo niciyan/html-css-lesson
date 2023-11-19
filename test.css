@@ -79,11 +79,13 @@ body {
 .header {
     height: 600px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .header .header-content, .header .header-img {
-    width: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .header .header-content small {
