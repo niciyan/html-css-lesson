@@ -48,15 +48,21 @@ body {
 }
 
 .nav .nav-links a{
-    padding: 1rem 1rem;
+    margin-left: 1rem;
     font-size: 1.4rem;
     font-weight: 600;
 
     position: relative;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease;
 }
 
-.nav .nav-links a:before {
+.nav .nav-links a:hover {
+    border-bottom: 2px solid;
+}
+
+/* .nav .nav-links a:before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -69,7 +75,7 @@ body {
 
 .nav .nav-links a:hover::before {
     width: 60%;
-}
+} */
 
 .nav .nav-home-button a i {
     font-size: 1.5rem;
@@ -130,6 +136,11 @@ body {
     transition: all 0.1s ease;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+}
+
 .card span {
     display: flex;
     justify-content: center;
@@ -180,6 +191,7 @@ body {
 
     .nav .nav-links, .nav .nav-home-button {
         display: none;
+        
     }
 
     .header {

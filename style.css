@@ -50,9 +50,9 @@ body {
 }
 
 .side1 {
-	border: 1px solid #ccc;
-	outline: 2px solid #ccc;
-	outline-offset: 4px;
+	/* border: 1px solid #e2dfdf; */
+	/* outline: 2px solid #ccc;
+	outline-offset: 4px; */
 
 	margin-bottom: 2rem;
 	border-radius: 10px;
@@ -62,8 +62,21 @@ body {
 	text-align: center;
 }
 
-.side1 li::before {
-  content: '🔗';
+.side1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/* display: inline; */
+}
+
+.side1 ul li  {
+	text-align: center;
+	margin-bottom: 10px;
+	transition: transform 0.3s ease;
+}
+
+.side1 ul li:hover {
+	transform: translateX(10px);
 }
 
 .post-title {

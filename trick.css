@@ -1,0 +1,53 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container {
+    width: 500px;
+    /* height: 500px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /* background-color: rgb(220, 190, 252);
+    clip-path: circle(50% at 0 0 );
+    transition: clip-path 2s ease; */
+}
+
+/* .container:hover {
+    clip-path: circle(100%);
+} */
+
+.btn {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: 10px solid;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-6px);
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.heading-1 {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
